@@ -1,0 +1,72 @@
+---
+import "@fontsource/inter";
+import "@fontsource/inter/500.css";
+import "@fontsource/inter/600.css";
+import "@fontsource/inter/700.css";
+import "@fontsource/inter/800.css";
+import "@fontsource/inter/900.css";
+
+export interface Props {
+    title: string;
+}
+
+const {title} = Astro.props;
+---
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width"/>
+    <meta name="generator" content={Astro.generator}/>
+
+    <link rel="sitemap" type="application/xml" title="Sitemap" href="/sitemap.xml">
+
+    <!-- Favicons -->
+    <link rel="shortcut icon" type="image/x-icon" href="/favicon.ico">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+
+    <meta name="description" content="Easily harness data insights with our open-source data platform, integrating Superset, Airflow, dbt, Docker, Keycloak, and NATS.io. Democratizing analytics for enhanced data lineage visibility.">
+    <meta name="keywords" content="data analytics, data platform, open source, insights, innovation, democratizing data, analytics, Apache Superset, Apache Airflow, dbt docs, Docker, Keycloak, NATS.io, data lineage, data visibility, statistics">
+    <meta name="author" content="MyDATAStack Team">
+    <meta name="robots" content="index, follow">
+    <meta name="googlebot" content="index, follow">
+    <meta property="og:title" content="The Open Source Data Platform">
+    <meta name="og:description" content="Easily harness data insights with our open-source data platform, integrating Superset, Airflow, dbt, Docker, Keycloak, and NATS.io. Democratizing analytics for enhanced data lineage visibility.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://www.mydatastack.tech">
+    <meta property="og:image" content="https://www.mydatastack.tech/icon.png">
+    <meta property="og:image:alt" content="The Open Source Data Platform">
+    <meta property="og:site_name" content="MyDATAStack">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="The Open Source Data Platform">
+    <meta name="twitter:description"
+          content="Welcome to our open-source data platform, where insights meet innovation effortlessly. Our platform is built on the philosophy of democratizing data analytics, empowering businesses and individuals to harness the power of their data without constraints.">
+    <meta name="twitter:image" content="https://www.mydatastack.tech/icon.png">
+    <meta name="msvalidate.01" content="CE638F8DAC7B1837AFD6F785E81877BE" />
+    <title>{title}</title>
+
+</head>
+<body>
+<slot/>
+<style is:global>
+    html {
+        font-family: Inter;
+        background-color: #26272b;
+        overflow-x: hidden;
+        scroll-behavior: smooth;
+    }
+    .bash {
+        background-color: black;
+        color: white;
+        font-size: medium;
+        font-family: Consolas, Monaco, Lucida Console, Liberation Mono, DejaVu Sans Mono, Bitstream Vera Sans Mono, Courier New, monospace;
+        width: 100%;
+        display: inline-block;
+        margin-top: 1.5em;
+        padding: 1.5em;
+    }
+</style>
+</body>
+</html>

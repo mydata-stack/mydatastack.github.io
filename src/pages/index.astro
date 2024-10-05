@@ -1,0 +1,55 @@
+---
+import Layout from "../layouts/Layout.astro";
+import { Hero } from "../components/Hero.jsx";
+import { Navbar } from "../components/Navbar.jsx";
+import { Features1 } from "../components/Features1.jsx";
+import { Features2 } from "../components/Features2.jsx";
+import { Features3 } from "../components/Features3.jsx";
+import { Features4 } from "../components/Features4.jsx";
+import { Features5 } from "../components/Features5.jsx";
+import { Features6 } from "../components/Features6.jsx";
+import { Features7 } from "../components/Features7.jsx";
+import { Features8 } from "../components/Features8.jsx";
+import { Testimonials } from "../components/Testimonials.jsx";
+import { FeaturesDiagonal } from "../components/FeaturesDiagonal.jsx";
+import { Pricing } from "../components/Pricing.jsx";
+import { FAQ } from "../components/FAQ.jsx";
+import { Brands } from "../components/Brands.jsx";
+import { Divider } from "../components/Divider";
+import { Footer } from "../components/Footer.jsx";
+import { ScrollUpButton } from "../components/ScrollUpButton";
+import "../styles/Theme.css";
+import "../styles/Diagonals.css";
+
+---
+
+<Layout title="MyDATAStack - The Open Source Data Platform">
+  <Navbar client:load />
+  <Hero client:load />
+  <Features1 client:load />
+  <Divider />
+  <Features2 client:load />
+  <Divider />
+  <Features3 client:load />
+  <Divider />
+  <Features4 client:load />
+  <Divider />
+  <Features5 client:load />
+  <Divider />
+  <!--
+  <Features6 client:load />
+  <Divider />
+  <Features7 client:load />
+  <Divider />
+  <Features8 client:load />
+  <Divider />
+  -->
+
+  <!--Testimonials client:load /-->
+  <FeaturesDiagonal client:load />
+  <!--Pricing client:load /-->
+  <Brands client:load />
+  <FAQ client:load />
+  <Footer />
+  <ScrollUpButton client:load />
+</Layout>
