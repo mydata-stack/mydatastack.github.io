@@ -5,12 +5,12 @@ import tailwind from "@astrojs/tailwind";
 import robotsTxt from "astro-robots-txt";
 
 export default defineConfig({
-    site: 'https://mydatastack.tech',
+    site: 'https://mydata-stack.github.io',
     output: 'static',
     outDir: 'docs',
     integrations: [react(), tailwind(), robotsTxt(
         {
-            sitemap: 'https://mydatastack.tech/sitemap.xml'
+            sitemap: 'https://mydata-stack.github.io/sitemap.xml'
         }
     )]
 });
